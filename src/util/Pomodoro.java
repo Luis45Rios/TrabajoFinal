@@ -1,5 +1,7 @@
 package util;
 
+import java.util.Scanner;
+
 public class Pomodoro {
     private String tarea;
     private final int TIEMPO_POMODORO;
@@ -27,6 +29,30 @@ public class Pomodoro {
                 this.TIEMPO_DESCANSO_CORTO = 5;
                 this.TIEMPO_DESCANSO_LARGO = 15;
                 break;
+        }
+    } 
+    
+    public void comenzarPomodoro(Scanner scanner) {
+        while (true) {
+            System.out.println("Tarea: " + this.tarea);
+            System.out.println("Comenzando Pomodoro (" + this.TIEMPO_POMODORO + " min)");
+
+            this.CICLOS_COMPLETOS++;
+
+            if (this.CICLOS_COMPLETOS % 4 == 0) {
+                System.out.println("Descanso largo (" + this.TIEMPO_DESCANSO_LARGO + " min)");
+            } else {
+                System.out.println("Descanso corto (" + this.TIEMPO_DESCANSO_CORTO + " min)");
+            }
+
+            System.out.println("¿Desea continuar? si/no");
+            String continuar = scanner.nextLine();
+
+            if (continuar.equalsIgnoreCase("no")) {
+                System.out.println("Pomodoro terminado");
+
+                break;
+            }
         }
     }
 }
