@@ -1,18 +1,47 @@
-## Getting Started
+# Pomodoro
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<p align="justify">
+El método Pomodoro es una técnica de gestión del tiempo diseñada para 
+ayudarte a mejorar tu productividad y enfoque. Fue creada por Francesco Cirillo a fines de los años 80 y se basa en dividir el trabajo en intervalos de tiempo llamados Pomodoros.
+</p>
+En este proyecto, el método ha sido implementado en Java para ofrecerte una herramienta sencilla y práctica.
 
-## Folder Structure
+## Pasos
 
-The workspace contains two folders by default, where:
+**1. Asignar una tarea:** Al iniciar, el usuario podrá asignar un nombre a la tarea que desea realizar.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+**2.Seleccionar nivel de enfoque:** Nuestro programa ofrece dos opciones:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Opción 1: Enfocado
+- Opción 2: Muy enfocado
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Configuración del temporizador según la opción seleccionada:
 
-## Dependency Management
+**Opción 1:** Enfocado
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+El contador estará dividido en 4 intervalos (Pomodoros), distribuidos de la siguiente manera:
+
+</p>
+
+- Tiempo 1: 25 minutos de trabajo con un descanso corto de 5 minutos.
+- Tiempo 2: 25 minutos de trabajo con un descanso corto de 5 minutos.
+- Tiempo 3: 25 minutos de trabajo con un descanso corto de 5 minutos.
+- Tiempo 4: 25 minutos de trabajo con un descanso largo de 15 minutos.
+
+**Opción 2:** Muy enfocado
+
+</p>
+El contador estará dividido en 4 intervalos (Pomodoros), distribuidos de la siguiente manera:
+</p>
+
+- Tiempo 1: 50 minutos de trabajo con un descanso corto de 10 minutos.
+- Tiempo 2: 50 minutos de trabajo con un descanso corto de 10 minutos.
+- Tiempo 3: 50 minutos de trabajo con un descanso corto de 10 minutos.
+- Tiempo 4: 50 minutos de trabajo con un descanso largo de 30 minutos.
+
+### Distribución del Trabajo
+
+- Steven Jumbo (Constructor Pomodoro)
+- Joseph Aguilar (Función para comenzar el pomodoro)
+- Domenica Rojas (Ejecusión de toda la aplicación en el archivo App)
+- Luis Ríos (Función para dar inicio a los tiempos)
